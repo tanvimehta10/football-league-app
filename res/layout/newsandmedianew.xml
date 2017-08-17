@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/latestnewsbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:background="#0066FF"
+        android:drawableLeft="@drawable/latestnews_icon"
+        android:gravity="left"
+        android:onClick="clickNews"
+        android:padding="10dp"
+        android:text="Latest news"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/NoticeBoardbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:background="#0066FF"
+        android:drawableLeft="@drawable/notice_icon"
+        android:gravity="left"
+        android:onClick="clickNotice"
+        android:padding="10dp"
+        android:text="NoticeBoard"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/photobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:background="#0066FF"
+        android:drawableLeft="@drawable/photos_icon"
+        android:gravity="left"
+        android:onClick="clickPhotos"
+        android:padding="10dp"
+        android:text="Photos"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/Videobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:background="#0066FF"
+        android:drawableLeft="@drawable/videos_icon"
+        android:gravity="left"
+        android:onClick="clickVideos"
+        android:padding="10dp"
+        android:text="Videos"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         >
+         <activity android:name="com.example.myproject.HomeActivity">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.myproject.MainActivity"
+            android:label="Sign Up" >
+           
+        </activity>
+        <activity android:name="com.example.myproject.SignUpActivity"
+            android:label="Sign Up"></activity>
+        <activity android:name="com.example.myproject.ProfileActivity"
+            android:label="My Profile">
+            
+        </activity>
+        <activity android:name="com.example.myproject.ForgotPassActivity"
+            android:label="Forgot Password">
+            
+        </activity>
+        <activity android:name="com.example.myproject.ResetPasswordActivity"
+            android:label="Reset Password"></activity>
+        <activity android:name="com.example.myproject.MenuPageActivity"
+            android:label="Home"></activity>
+       
+        <activity android:name="com.example.myproject.LoginActivity" 
+            android:label="Login">
+        </activity>
+        
+        <activity android:name="com.example.myproject.fix_res_01Activity" 
+            android:label="Fixtures and Results">
+        </activity>
+        
+        <activity android:name="com.example.myproject.list_viewActivity" >
+            
+        </activity>
+        
+        <activity android:name="com.example.myproject.directory_teams_listActivity">
+            
+        </activity>
+        
+        <activity android:name="com.example.myproject.LeagueTableActivity">
+        
+        </activity>
+        
+        <activity android:name="com.example.myproject.NewAndMedia_Activity">
+            
+        </activity>
+            
+        <activity android:name="com.example.myproject.latest_news_Activity">
+            
+        </activity>
+        
+        <activity android:name="com.example.myproject.LeagueTableTeamInfoActivity">
+            
+            
+        </activity>
+        
+        <activity android:name= "com.example.myproject.TeamDirectory_teamInfoActivity">
+            
+        </activity> 
+        <activity android:name="com.example.myproject.sponsorsActivity">
+            
+        </activity>
+        <activity android:name="com.example.myproject.LatestNewsList_Activity">
+            
+        </activity>
+               </application>
+
+</manifest>

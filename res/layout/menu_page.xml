@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:weightSum="3"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/dateTimeTextView"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="DEMONSTRATION LEAGUE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fixture"
+                android:onClick="fixClick" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:scaleType="fitXY"
+                android:src="@drawable/league_table"
+                android:onClick="displaydivisons" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imageView1"
+                android:background="#3366CC"
+                android:padding="1dp"
+                android:text="Fixtures &amp; Results"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView2"
+                android:layout_alignBaseline="@+id/imageView2"
+                android:layout_alignLeft="@+id/imageView2"
+                android:background="#3366CC"
+                android:padding="1dp"
+                android:text="League Table"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/ImageView3"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/team_directory" 
+				android:onClick="listview"
+                />
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@+id/ImageView3"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ImageView3"
+                android:scaleType="fitXY"
+                android:src="@drawable/news_and_media"
+                android:onClick="displaynews" />
+
+            <TextView
+                android:id="@+id/TextView4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ImageView3"
+                android:background="#3366CC"
+                android:padding="1dp"
+                android:text="Team Directory"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ImageView4"
+                android:layout_alignBaseline="@+id/ImageView4"
+                android:layout_alignLeft="@+id/ImageView4"
+                android:background="#3366CC"
+                android:padding="1dp"
+                android:text="News And Media"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sponsors"
+                android:onClick="displaysponsors" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@+id/ImageView01"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_us" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ImageView01"
+                android:background="#3366CC"
+                android:padding="1dp"
+                android:text="League Sponsors"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ImageView02"
+                android:layout_alignBaseline="@+id/ImageView02"
+                android:layout_alignLeft="@+id/ImageView02"
+                android:background="#3366CC"
+                android:padding="1dp"
+                android:text="Contact Us"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
